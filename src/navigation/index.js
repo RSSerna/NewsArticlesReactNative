@@ -12,22 +12,22 @@ import ArticleDetailScreen from "../screens/ArticleDetailScreen";
 const Stack = createNativeStackNavigator();
 
 function AppNavigation() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator
-        initialRouteName="Welcome"
-        screenOptions={{ headerShown: false }}
-      >
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Welcome" component={WelcomeScreen} />
-        <Stack.Screen name="ArticleDetail" component={ArticleDetailScreen} />
-        <Stack.Screen name="MyArticles" component={MyArticlesScreen} />
-        <Stack.Screen name="CustomNewsScreen" component={CustomNewsScreen} />
-        <Stack.Screen name="NewsFormScreen" component={NewsFormScreen} />
-        <Stack.Screen name="FavoriteScreen" component={FavoriteScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+    return (
+        <NavigationContainer>
+            <Stack.Navigator
+                initialRouteName="Welcome"
+                screenOptions={{ headerShown: false }}
+            >
+                <Stack.Screen name="Home" component={HomeScreen} />
+                <Stack.Screen name="Welcome" component={WelcomeScreen} />
+                <Stack.Screen name="ArticleDetail" component={ArticleDetailScreen} />
+                <Stack.Screen name="MyArticles" component={MyArticlesScreen} />
+                <Stack.Screen name="CustomNewsScreen" component={CustomNewsScreen} />
+                <Stack.Screen name="NewsFormScreen" component={NewsFormScreen} />
+                <Stack.Screen name="FavoriteScreen" component={FavoriteScreen} />
+            </Stack.Navigator>
+        </NavigationContainer>
+    );
 }
 
 export default AppNavigation;
